@@ -1,0 +1,292 @@
+(ns binance.api.rules.trading)
+
+(defn btc []
+{
+:ETHBTC     { :no 1   :pair "ETH/BTC"   :min-amount 0.001   :unit-a "ETH"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:LTCBTC     { :no 2   :pair "LTC/BTC"   :min-amount 0.01    :unit-a "LTC"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:BNBBTC     { :no 3   :pair "BNB/BTC"   :min-amount 1       :unit-a "BNB"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:NEOBTC     { :no 4   :pair "NEO/BTC"   :min-amount 0.01    :unit-a "NEO"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:GASBTC     { :no 5   :pair "GAS/BTC"   :min-amount 0.01    :unit-a "GAS"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:BCCBTC     { :no 6   :pair "BCC/BTC"   :min-amount 0.001   :unit-a "BCC"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:MCOBTC     { :no 7   :pair "MCO/BTC"   :min-amount 0.01    :unit-a "MCO"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:WTCBTC     { :no 8   :pair "WTC/BTC"   :min-amount 1       :unit-a "WTC"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:QTUMBTC    { :no 9   :pair "QTUM/BTC"  :min-amount 0.01    :unit-a "QTUM"  :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:OMGBTC     { :no 10  :pair "OMG/BTC"   :min-amount 0.01    :unit-a "OMG"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:ZRXBTC     { :no 11  :pair "ZRX/BTC"   :min-amount 1       :unit-a "ZRX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:STRATBTC   { :no 12  :pair "STRAT/BTC" :min-amount 0.01    :unit-a "STRAT" :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:SNGLSBTC   { :no 13  :pair "SNGLS/BTC" :min-amount 1       :unit-a "SNGLS" :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BQXBTC     { :no 14  :pair "BQX/BTC"   :min-amount 1       :unit-a "BQX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:KNCBTC     { :no 15  :pair "KNC/BTC"   :min-amount 1       :unit-a "KNC"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:FUNBTC     { :no 16  :pair "FUN/BTC"   :min-amount 1       :unit-a "FUN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:SNMBTC     { :no 17  :pair "SNM/BTC"   :min-amount 1       :unit-a "SNM"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:LINKBTC    { :no 18  :pair "LINK/BTC"  :min-amount 1       :unit-a "LINK"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:XVGBTC     { :no 19  :pair "XVG/BTC"   :min-amount 1       :unit-a "XVG"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:CTRBTC     { :no 20  :pair "CTR/BTC"   :min-amount 1       :unit-a "CTR"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:SALTBTC    { :no 21  :pair "SALT/BTC"  :min-amount 0.01    :unit-a "SALT"  :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:IOTABTC    { :no 22  :pair "IOTA/BTC"  :min-amount 1       :unit-a "IOTA"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:MDABTC     { :no 23  :pair "MDA/BTC"   :min-amount 1       :unit-a "MDA"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:MTLBTC     { :no 24  :pair "MTL/BTC"   :min-amount 1       :unit-a "MTL"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:SUBBTC     { :no 25  :pair "SUB/BTC"   :min-amount 1       :unit-a "SUB"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:EOSBTC     { :no 26  :pair "EOS/BTC"   :min-amount 1       :unit-a "EOS"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:SNTBTC     { :no 27  :pair "SNT/BTC"   :min-amount 1       :unit-a "SNT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ETCBTC     { :no 28  :pair "ETC/BTC"   :min-amount 0.01    :unit-a "ETC"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:MTHBTC     { :no 29  :pair "MTH/BTC"   :min-amount 1       :unit-a "MTH"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ENGBTC     { :no 30  :pair "ENG/BTC"   :min-amount 1       :unit-a "ENG"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:DNTBTC     { :no 31  :pair "DNT/BTC"   :min-amount 1       :unit-a "DNT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BNTBTC     { :no 32  :pair "BNT/BTC"   :min-amount 1       :unit-a "BNT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ASTBTC     { :no 33  :pair "AST/BTC"   :min-amount 1       :unit-a "AST"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:DASHBTC    { :no 34  :pair "DASH/BTC"  :min-amount 0.001   :unit-a "DASH"  :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:ICNBTC     { :no 35  :pair "ICN/BTC"   :min-amount 1       :unit-a "ICN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:OAXBTC     { :no 36  :pair "OAX/BTC"   :min-amount 1       :unit-a "OAX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BTGBTC     { :no 37  :pair "BTG/BTC"   :min-amount 0.01    :unit-a "BTG"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:EVXBTC     { :no 38  :pair "EVX/BTC"   :min-amount 1       :unit-a "EVX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:REQBTC     { :no 39  :pair "REQ/BTC"   :min-amount 1       :unit-a "REQ"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:LRCBTC     { :no 40  :pair "LRC/BTC"   :min-amount 1       :unit-a "LRC"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:VIBBTC     { :no 41  :pair "VIB/BTC"   :min-amount 1       :unit-a "VIB"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:HSRBTC     { :no 42  :pair "HSR/BTC"   :min-amount 1       :unit-a "HSR"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:TRXBTC     { :no 43  :pair "TRX/BTC"   :min-amount 1       :unit-a "TRX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:POWRBTC    { :no 44  :pair "POWR/BTC"  :min-amount 1       :unit-a "POWR"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ARKBTC     { :no 45  :pair "ARK/BTC"   :min-amount 0.01    :unit-a "ARK"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:YOYOBTC    { :no 46  :pair "YOYO/BTC"  :min-amount 1       :unit-a "YOYO"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:XRPBTC     { :no 47  :pair "XRP/BTC"   :min-amount 1       :unit-a "XRP"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:MODBTC     { :no 48  :pair "MOD/BTC"   :min-amount 1       :unit-a "MOD"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:ENJBTC     { :no 49  :pair "ENJ/BTC"   :min-amount 1       :unit-a "ENJ"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:STORJBTC   { :no 50  :pair "STORJ/BTC" :min-amount 1       :unit-a "STORJ" :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:VENBTC     { :no 51  :pair "VEN/BTC"   :min-amount 1       :unit-a "VEN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:KMDBTC     { :no 52  :pair "KMD/BTC"   :min-amount 1       :unit-a "KMD"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:RCNBTC     { :no 53  :pair "RCN/BTC"   :min-amount 1       :unit-a "RCN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:NULSBTC    { :no 54  :pair "NULS/BTC"  :min-amount 1       :unit-a "NULS"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:RDNBTC     { :no 55  :pair "RDN/BTC"   :min-amount 1       :unit-a "RDN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:XMRBTC     { :no 56  :pair "XMR/BTC"   :min-amount 0.001   :unit-a "XMR"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:DLTBTC     { :no 57  :pair "DLT/BTC"   :min-amount 0.001   :unit-a "DLT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:AMBBTC     { :no 58  :pair "AMB/BTC"   :min-amount 0.001   :unit-a "AMB"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BATBTC     { :no 59  :pair "BAT/BTC"   :min-amount 1       :unit-a "BAT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ZECBTC     { :no 60  :pair "ZEC/BTC"   :min-amount 0.001   :unit-a "ZEC"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:BCPTBTC    { :no 61  :pair "BCPT/BTC"  :min-amount 1       :unit-a "BCPT"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ARNBTC     { :no 62  :pair "ARN/BTC"   :min-amount 1       :unit-a "ARN"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:GVTBTC     { :no 63  :pair "GVT/BTC"   :min-amount 0.01    :unit-a "GVT"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:CDTBTC     { :no 64  :pair "CDT/BTC"   :min-amount 1       :unit-a "CDT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:GXSBTC     { :no 65  :pair "GXS/BTC"   :min-amount 0.01    :unit-a "GXS"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:POEBTC     { :no 66  :pair "POE/BTC"   :min-amount 1       :unit-a "POE"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:QSPBTC     { :no 67  :pair "QSP/BTC"   :min-amount 1       :unit-a "QSP"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BTSBTC     { :no 68  :pair "BTS/BTC"   :min-amount 1       :unit-a "BTS"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:XZCBTC     { :no 69  :pair "XZC/BTC"   :min-amount 0.01    :unit-a "XZC"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:LSKBTC     { :no 70  :pair "LSK/BTC"   :min-amount 0.01    :unit-a "LSK"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:TNTBTC     { :no 71  :pair "TNT/BTC"   :min-amount 1       :unit-a "TNT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:FUELBTC    { :no 72  :pair "FUEL/BTC"  :min-amount 1       :unit-a "FUEL"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:MANABTC    { :no 73  :pair "MANA/BTC"  :min-amount 1       :unit-a "MANA"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:BCDBTC     { :no 74  :pair "BCD/BTC"   :min-amount 0.001   :unit-a "BCD"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:DGDBTC     { :no 75  :pair "DGD/BTC"   :min-amount 0.001   :unit-a "DGD"   :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:ADXBTC     { :no 76  :pair "ADX/BTC"   :min-amount 1       :unit-a "ADX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ADABTC     { :no 77  :pair "ADA/BTC"   :min-amount 1       :unit-a "ADA"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:PPTBTC     { :no 78  :pair "PPT/BTC"   :min-amount 0.01    :unit-a "PPT"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:CMTBTC     { :no 79  :pair "CMT/BTC"   :min-amount 1       :unit-a "CMT"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:XLMBTC     { :no 80  :pair "XLM/BTC"   :min-amount 1       :unit-a "XLM"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:CNDBTC     { :no 81  :pair "CND/BTC"   :min-amount 1       :unit-a "CND"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:LENDBTC    { :no 82  :pair "LEND/BTC"  :min-amount 1       :unit-a "LEND"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:WABIBTC    { :no 83  :pair "WABI/BTC"  :min-amount 1       :unit-a "WABI"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:TNBBTC     { :no 84  :pair "TNB/BTC"   :min-amount 1       :unit-a "TNB"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:WAVESBTC   { :no 85  :pair "WAVES/BTC" :min-amount 0.01    :unit-a "WAVES" :min-price 0.000001    :unit-b "BTC"   :min-order 0.001 }
+:ICXBTC     { :no 86  :pair "ICX/BTC"   :min-amount 0.01    :unit-a "ICX"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:GTOBTC     { :no 87  :pair "GTO/BTC"   :min-amount 1       :unit-a "GTO"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:OSTBTC     { :no 88  :pair "OST/BTC"   :min-amount 1       :unit-a "OST"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:ELFBTC     { :no 89  :pair "ELF/BTC"   :min-amount 1       :unit-a "ELF"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:AIONBTC    { :no 90  :pair "AION/BTC"  :min-amount 0.01    :unit-a "AION"  :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:NEBLBTC    { :no 91  :pair "NEBL/BTC"  :min-amount 0.01    :unit-a "NEBL"  :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:BRDBTC     { :no 92  :pair "BRD/BTC"   :min-amount 1       :unit-a "BRD"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:EDOBTC     { :no 93  :pair "EDO/BTC"   :min-amount 0.01    :unit-a "EDO"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:WINGSBTC   { :no 94  :pair "WINGS/BTC" :min-amount 1       :unit-a "WINGS" :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:NAVBTC     { :no 95  :pair "NAV/BTC"   :min-amount 0.01    :unit-a "NAV"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:LUNBTC     { :no 96  :pair "LUN/BTC"   :min-amount 0.01    :unit-a "LUN"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:TRIGBTC    { :no 97  :pair "TRIG/BTC"  :min-amount 0.01    :unit-a "TRIG"  :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:APPCBTC    { :no 98  :pair "APPC/BTC"  :min-amount 1       :unit-a "APPC"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:VIBEBTC    { :no 99  :pair "VIBE/BTC"  :min-amount 1       :unit-a "VIBE"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:RLCBTC     { :no 100 :pair "RLC/BTC"   :min-amount 0.01    :unit-a "RLC"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:INSBTC     { :no 101 :pair "INS/BTC"   :min-amount 0.01    :unit-a "INS"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:PIVXBTC    { :no 102 :pair "PIVX/BTC"  :min-amount 0.01    :unit-a "PIVX"  :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:IOSTBTC    { :no 103 :pair "IOST/BTC"  :min-amount 1       :unit-a "IOST"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:CHATBTC    { :no 104 :pair "CHAT/BTC"  :min-amount 1       :unit-a "CHAT"  :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:STEEMBTC   { :no 105 :pair "STEEM/BTC" :min-amount 0.01    :unit-a "STEEM" :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:NANOBTC    { :no 106 :pair "NANO/BTC"  :min-amount 0.01    :unit-a "NANO"  :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:VIABTC     { :no 107 :pair "VIA/BTC"   :min-amount 0.01    :unit-a "VIA"   :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:BLZBTC     { :no 108 :pair "BLZ/BTC"   :min-amount 1       :unit-a "BLZ"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+:AEBTC      { :no 109 :pair "AE/BTC"    :min-amount 0.01    :unit-a "AE"    :min-price 0.0000001   :unit-b "BTC"   :min-order 0.001 }
+:RPXBTC     { :no 110 :pair "RPX/BTC"   :min-amount 1       :unit-a "RPX"   :min-price 0.00000001  :unit-b "BTC"   :min-order 0.001 }
+})
+
+(defn eth []
+  {
+    :BNBETH     { :no 1     :pair "BNB/ETH"   :min-amount 1       :unit-a "BNB"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :QTUMETH    { :no 2     :pair "QTUM/ETH"  :min-amount 0.01    :unit-a "QTUM"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :SNTETH     { :no 3     :pair "SNT/ETH"   :min-amount 1       :unit-a "SNT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :BNTETH     { :no 4     :pair "BNT/ETH"   :min-amount 0.01    :unit-a "BNT"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :EOSETH     { :no 5     :pair "EOS/ETH"   :min-amount 0.01    :unit-a "EOS"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :OAXETH     { :no 6     :pair "OAX/ETH"   :min-amount 1       :unit-a "OAX"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :DNTETH     { :no 7     :pair "DNT/ETH"   :min-amount 1       :unit-a "DNT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :MCOETH     { :no 8     :pair "MCO/ETH"   :min-amount 0.01    :unit-a "MCO"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :ICNETH     { :no 9     :pair "ICN/ETH"   :min-amount 1       :unit-a "ICN"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :WTCETH     { :no 10    :pair "WTC/ETH"   :min-amount 0.01    :unit-a "WTC"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :OMGETH     { :no 11    :pair "OMG/ETH"   :min-amount 0.01    :unit-a "OMG"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :ZRXETH     { :no 12    :pair "ZRX/ETH"   :min-amount 1       :unit-a "ZRX"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :STRATETH   { :no 13    :pair "STRAT/ETH" :min-amount 0.01    :unit-a "STRAT" :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :SNGLSETH   { :no 14    :pair "SNGLS/ETH" :min-amount 1       :unit-a "SNGLS" :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :BXQETH     { :no 15    :pair "BXQ/ETH"   :min-amount 1       :unit-a "BQX"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :KNCETH     { :no 16    :pair "KNC/ETH"   :min-amount 1       :unit-a "KNC"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :FUNETH     { :no 17    :pair "FUN/ETH"   :min-amount 1       :unit-a "FUN"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :SNMETH     { :no 18    :pair "SNM/ETH"   :min-amount 1       :unit-a "SNM"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :NEOETH     { :no 19    :pair "NEO/ETH"   :min-amount 0.01    :unit-a "NEO"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :LINKETH    { :no 20    :pair "LINK/ETH"  :min-amount 1       :unit-a "LINK"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :XVGETH     { :no 21    :pair "XVG/ETH"   :min-amount 1       :unit-a "XVG"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :CTRETH     { :no 22    :pair "CTR/ETH"   :min-amount 1       :unit-a "CTR"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :SALTETH    { :no 23    :pair "SALT/ETH"  :min-amount 0.01    :unit-a "SALT"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :IOTAETH    { :no 24    :pair "IOTA/ETH"  :min-amount  1      :unit-a "IOTA"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :MDAETH     { :no 25    :pair "MDA/ETH"   :min-amount 1       :unit-a "MDA"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :MTLETH     { :no 26    :pair "MTL/ETH"   :min-amount 1       :unit-a "MTL"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :SUBETH     { :no 27    :pair "SUB/ETH"   :min-amount 1       :unit-a "SUB"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ETCETH     { :no 28    :pair "ETC/ETH"   :min-amount 0.01    :unit-a "ETC"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :MTHETH     { :no 29    :pair "MTH/ETH"   :min-amount 1       :unit-a "MTH"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ENGETH     { :no 30    :pair "ENG/ETH"   :min-amount 1       :unit-a "ENG"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :ASTETH     { :no 31    :pair "AST/ETH"   :min-amount 1       :unit-a "AST"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :DASHETH    { :no 32    :pair "DASH/ETH"  :min-amount 0.001   :unit-a "DASH"  :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :BTGETH     { :no 33    :pair "BTG/ETH"   :min-amount 0.01    :unit-a "BTG"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :EVXETH     { :no 34    :pair "EVX/ETH"   :min-amount 1       :unit-a "EVX"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :REQETH     { :no 35    :pair "REQ/ETH"   :min-amount 1       :unit-a "REQ"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :LRCETH     { :no 36    :pair "LRC/ETH"   :min-amount 1       :unit-a "LRC"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :VIBETH     { :no 37    :pair "VIB/ETH"   :min-amount 1       :unit-a "VIB"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :HSRETH     { :no 38    :pair "HSR/ETH"   :min-amount 0.01    :unit-a "HSR"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :TRXETH     { :no 39    :pair "TRX/ETH"   :min-amount 1       :unit-a "TRX"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :POWRETH    { :no 40    :pair "POWR/ETH"  :min-amount 1       :unit-a "POWR"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ARKETH     { :no 41    :pair "ARK/ETH"   :min-amount 0.01    :unit-a "ARK"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :YOYOETH    { :no 42    :pair "YOYO/ETH"  :min-amount 1       :unit-a "YOYO"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :XRPETH     { :no 43    :pair "XRP/ETH"   :min-amount 1       :unit-a "XRP"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :MODETH     { :no 44    :pair "MOD/ETH"   :min-amount 1       :unit-a "MOD"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :ENJETH     { :no 45    :pair "ENJ/ETH"   :min-amount 1       :unit-a "ENJ"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :STORJETH   { :no 46    :pair "STORJ/ETH" :min-amount 1       :unit-a "STORJ" :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :VENETH     { :no 47    :pair "VEN/ETH"   :min-amount 1       :unit-a "VEN"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :KMDETH     { :no 48    :pair "KMD/ETH"   :min-amount 1       :unit-a "KMD"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :RCNETH     { :no 49    :pair "RCN/ETH"   :min-amount 1       :unit-a "RCN"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :NULSETH    { :no 50    :pair "NULS/ETH"  :min-amount 1       :unit-a "NULS"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :RDNETH     { :no 51    :pair "RDN/ETH"   :min-amount 1       :unit-a "RDN"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :XMRETH     { :no 52    :pair "XMR/ETH"   :min-amount 1       :unit-a "XMR"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :DLTETH     { :no 53    :pair "DLT/ETH"   :min-amount 1       :unit-a "DLT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :AMBETH     { :no 54    :pair "AMB/ETH"   :min-amount 1       :unit-a "AMB"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :BCCETH     { :no 55    :pair "BCC/ETH"   :min-amount 1       :unit-a "BCC"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :BATETH     { :no 56    :pair "BAT/ETH"   :min-amount 1       :unit-a "BAT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ZECETH     { :no 57    :pair "ZEC/ETH"   :min-amount 0.001   :unit-a "ZEC"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :BCPTETH    { :no 58    :pair "BCPT/ETH"  :min-amount 1       :unit-a "BCPT"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ARNETH     { :no 59    :pair "ARN/ETH"   :min-amount 1       :unit-a "ARN"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :GVTETH     { :no 60    :pair "GVT/ETH"   :min-amount 0.01    :unit-a "GVT"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :CDTETH     { :no 61    :pair "CDT/ETH"   :min-amount 1       :unit-a "CDT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :GXSETH     { :no 62    :pair "GXS/ETH"   :min-amount 0.01    :unit-a "GXS"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :POEETH     { :no 63    :pair "POE/ETH"   :min-amount 1       :unit-a "POE"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :QSPETH     { :no 64    :pair "QSP/ETH"   :min-amount 1       :unit-a "QSP"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :BTSETH     { :no 65    :pair "BTS/ETH"   :min-amount 1       :unit-a "BTS"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :XZCETH     { :no 66    :pair "XZC/ETH"   :min-amount 0.01    :unit-a "XZC"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :LSKETH     { :no 67    :pair "LSK/ETH"   :min-amount 0.01    :unit-a "LSK"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :TNTETH     { :no 68    :pair "TNT/ETH"   :min-amount 1       :unit-a "TNT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :FUELETH    { :no 69    :pair "FUEL/ETH"  :min-amount 1       :unit-a "FUEL"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :MANAETH    { :no 70    :pair "MANA/ETH"  :min-amount 1       :unit-a "MANA"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :BCDETH     { :no 71    :pair "BCD/ETH"   :min-amount 0.001   :unit-a "BCD"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :DGDETH     { :no 72    :pair "DGD/ETH"   :min-amount 0.001   :unit-a "DGD"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :ADXETH     { :no 73    :pair "ADX/ETH"   :min-amount 1       :unit-a "ADX"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :ADAETH     { :no 74    :pair "ADA/ETH"   :min-amount 1       :unit-a "ADA"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :PPTETH     { :no 75    :pair "PPT/ETH"   :min-amount 1       :unit-a "PPT"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :CMTETH     { :no 76    :pair "CMT/ETH"   :min-amount 1       :unit-a "CMT"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :XLMETH     { :no 77    :pair "XLM/ETH"   :min-amount 1       :unit-a "XLM"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :CNDETH     { :no 78    :pair "CND/ETH"   :min-amount 1       :unit-a "CND"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :LENDETH    { :no 79    :pair "LEND/ETH"  :min-amount 1       :unit-a "LEND"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :WABIETH    { :no 80    :pair "WABI/ETH"  :min-amount 1       :unit-a "WABI"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :LTCETH     { :no 81    :pair "LTC/ETH"   :min-amount 0.001   :unit-a "LTC"   :min-price 0.00001      :unit-b "ETH" :min-order 0.01 }
+    :TNBETH     { :no 82    :pair "TNB/ETH"   :min-amount 1       :unit-a "TNB"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :WAVESETH   { :no 83    :pair "WAVES/ETH" :min-amount 0.01    :unit-a "WAVES" :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :ICXETH     { :no 84    :pair "ICX/ETH"   :min-amount 0.01    :unit-a "ICX"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :GTOETH     { :no 85    :pair "GTO/ETH"   :min-amount 1       :unit-a "GTO"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :OSTETH     { :no 86    :pair "OST/ETH"   :min-amount 1       :unit-a "OST"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :ELFETH     { :no 87    :pair "ELF/ETH"   :min-amount 1       :unit-a "ELF"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :AIONETH    { :no 88    :pair "AION/ETH"  :min-amount 0.01    :unit-a "AION"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :NEBLETH    { :no 89    :pair "NEBL/ETH"  :min-amount 0.01    :unit-a "NEBL"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :BRDETH     { :no 90    :pair "BRD/ETH"   :min-amount 1       :unit-a "BRD"   :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :EDOETH     { :no 91    :pair "EDO/ETH"   :min-amount 0.01    :unit-a "EDO"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :WINGSETH   { :no 92    :pair "WINGS/ETH" :min-amount 1       :unit-a "WINGS" :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :NAVETH     { :no 93    :pair "NAV/ETH"   :min-amount 0.01    :unit-a "NAV"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :LUNETH     { :no 94    :pair "LUN/ETH"   :min-amount 0.01    :unit-a "LUN"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :TRIGETH    { :no 95    :pair "TRIG/ETH"  :min-amount 0.01    :unit-a "TRIG"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :APPCETH    { :no 96    :pair "APPC/ETH"  :min-amount 1       :unit-a "APPC"  :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :VIBEETH    { :no 97    :pair "VIBE/ETH"  :min-amount 1       :unit-a "VIBE"  :min-price 0.0000001    :unit-b "ETH" :min-order 0.01 }
+    :RLCETH     { :no 98    :pair "RLC/ETH"   :min-amount 0.01    :unit-a "RLC"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :INSETH     { :no 99    :pair "INS/ETH"   :min-amount 0.01    :unit-a "INS"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :PIVXETH    { :no 100   :pair "PIVX/ETH"  :min-amount 0.01    :unit-a "PIVX"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :IOSTETH    { :no 101   :pair "IOST/ETH"  :min-amount 1       :unit-a "IOST"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :CHATETH    { :no 102   :pair "CHAT/ETH"  :min-amount 1       :unit-a "CHAT"  :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :STEEMETH   { :no 103   :pair "STEEM/ETH" :min-amount 0.01    :unit-a "STEEM" :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :NANOETH    { :no 104   :pair "NANO/ETH"  :min-amount 0.01    :unit-a "NANO"  :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :VIAETH     { :no 105   :pair "VIA/ETH"   :min-amount 0.01    :unit-a "VIA"   :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :BLZETH     { :no 106   :pair "BLZ/ETH"   :min-amount 1       :unit-a "BLZ"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+    :AEETH      { :no 107   :pair "AE/ETH"    :min-amount 0.01    :unit-a "AE"    :min-price 0.000001     :unit-b "ETH" :min-order 0.01 }
+    :RPXETH     { :no 108   :pair "RPX/ETH"   :min-amount 1       :unit-a "RPX"   :min-price 0.00000001   :unit-b "ETH" :min-order 0.01 }
+  })
+
+
+(defn bnb []
+  {
+    :VENBNB   { :no 1   :pair "VEN/BNB"   :min-amout 0.01     :unit-a "VEN"   :min-price 0.0001   :unit-b "BNB" :min-order 1 }
+    :YOYOBNB  { :no 2   :pair "YOYO/BNB"  :min-amout 0.01     :unit-a "YOYO"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :POWRBNB  { :no 3   :pair "POWR/BNB"  :min-amout 0.01     :unit-a "POWR"  :min-price 0.0001   :unit-b "BNB" :min-order 1 }
+    :NULSBNB  { :no 4   :pair "NULS/BNB"  :min-amout 0.01     :unit-a "NULS"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :RCNBNB   { :no 5   :pair "RCN/BNB"   :min-amout 0.01     :unit-a "RCN"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :RDNBNB   { :no 6   :pair "RDN/BNB"   :min-amout 0.01     :unit-a "RDN"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :DLTBNB   { :no 7   :pair "DLT/BNB"   :min-amout 0.01     :unit-a "DLT"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :WTCBNB   { :no 8   :pair "WTC/BNB"   :min-amout 0.01     :unit-a "WTC"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :AMBBNB   { :no 9   :pair "AMB/BNB"   :min-amout 0.01     :unit-a "AMB"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :BCCBNB   { :no 10  :pair "BCC/BNB"   :min-amout 0.00001  :unit-a "BCC"   :min-price 0.01     :unit-b "BNB" :min-order 1 }
+    :BATBNB   { :no 11  :pair "BAT/BNB"   :min-amout 0.01     :unit-a "BAT"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :BCPTBNB  { :no 12  :pair "BCPT/BNB"  :min-amout 0.01     :unit-a "BCPT"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :NEOBNB   { :no 13  :pair "NEO/BNB"   :min-amout 0.001    :unit-a "NEO"   :min-price 0.001    :unit-b "BNB" :min-order 1 }
+    :QSPBNB   { :no 14  :pair "QSP/BNB"   :min-amout 0.01     :unit-a "QSP"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :BTSBNB   { :no 15  :pair "BTS/BNB"   :min-amout 0.01     :unit-a "BTS"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :XZCBNB   { :no 16  :pair "XZC/BNB"   :min-amout 0.001    :unit-a "XZC"   :min-price 0.001    :unit-b "BNB" :min-order 1 }
+    :LSKBNB   { :no 17  :pair "LSK/BNB"   :min-amout 0.001    :unit-a "LSK"   :min-price 0.0001   :unit-b "BNB" :min-order 1 }
+    :IOTABNB  { :no 18  :pair "IOTA/BNB"  :min-amout 0.01     :unit-a "IOTA"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :ADXBNB   { :no 19  :pair "ADX/BNB"   :min-amout 0.01     :unit-a "ADX"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :CMTBNB   { :no 20  :pair "CMT/BNB"   :min-amout 0.01     :unit-a "CMT"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :XLMBNB   { :no 21  :pair "XLM/BNB"   :min-amout 0.01     :unit-a "XLM"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :CNDBNB   { :no 22  :pair "CND/BNB"   :min-amout 0.01     :unit-a "CND"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :WABIBNB  { :no 23  :pair "WABI/BNB"  :min-amout 0.01     :unit-a "WABI"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :LTCBNB   { :no 24  :pair "LTC/BNB"   :min-amout 0.00001  :unit-a "LTC"   :min-price 0.01     :unit-b "BNB" :min-order 1 }
+    :WAVESBNB { :no 25  :pair "WAVES/BNB" :min-amout 0.01     :unit-a "WAVES" :min-price 0.0001   :unit-b "BNB" :min-order 1 }
+    :ICXBNB   { :no 26  :pair "ICX/BNB"   :min-amout 0.01     :unit-a "ICX"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :GTOBNB   { :no 27  :pair "GTO/BNB"   :min-amout 0.01     :unit-a "GTO"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :OSTBNB   { :no 28  :pair "OST/BNB"   :min-amout 0.01     :unit-a "OST"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :AIONBNB  { :no 29  :pair "AION/BNB"  :min-amout 0.01     :unit-a "AION"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :NEBLBNB  { :no 30  :pair "NEBL/BNB"  :min-amout 0.01     :unit-a "NEBL"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :BRDBNB   { :no 31  :pair "BRD/BNB"   :min-amout 0.01     :unit-a "BRD"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :MCOBNB   { :no 32  :pair "MCO/BNB"   :min-amout 0.01     :unit-a "MCO"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :NAVBNB   { :no 33  :pair "NAV/BNB"   :min-amout 0.01     :unit-a "NAV"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :TRIGBNB  { :no 34  :pair "TRIG/BNB"  :min-amout 0.01     :unit-a "TRIG"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :APPCBNB  { :no 35  :pair "APPC/BNB"  :min-amout 0.01     :unit-a "APPC"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :RLCBNB   { :no 36  :pair "RLC/BNB"   :min-amout 0.01     :unit-a "RLC"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :PIVXBNB  { :no 37  :pair "PIVX/BNB"  :min-amout 0.01     :unit-a "PIVX"  :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :STEEMBNB { :no 38  :pair "STEEM/BNB" :min-amout 0.01     :unit-a "STEEM" :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :NANOBNB  { :no 39  :pair "NANO/BNB"  :min-amout 0.01     :unit-a "NANO"  :min-price 0.0001   :unit-b "BNB" :min-order 1 }
+    :VIABNB   { :no 40  :pair "VIA/BNB"   :min-amout 0.01     :unit-a "VIA"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :BLZBNB   { :no 41  :pair "BLZ/BNB"   :min-amout 0.01     :unit-a "BLZ"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :AEBNB    { :no 42  :pair "AE/BNB"    :min-amout 0.01     :unit-a "AE"    :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    :RPXBNB   { :no 43  :pair "RPX/BNB"   :min-amout 0.01     :unit-a "RPX"   :min-price 0.00001  :unit-b "BNB" :min-order 1 }
+    : { :no  :pair :min-amout :unit-a :min-price :unit-b :min-order }
+  })
+
+(defn usdt []
+  {
+    :BTCUSDT { :no 1 :pair "BTC/USDT"  :min-amout 0.000001  :unit-a "BTC" :min-price 0.01   :unit-b "USDT"  :min-order 10 }
+    :ETHUSDT { :no 2 :pair "ETH/USDT"  :min-amout 0.00001   :unit-a "ETH" :min-price 0.01   :unit-b "USDT"  :min-order 10 }
+    :BNBUSDT { :no 3 :pair "BNB/USDT"  :min-amout 0.01      :unit-a "BNB" :min-price 0.0001 :unit-b "USDT"  :min-order 10 }
+    :BCCUSDT { :no 4 :pair "BCC/USDT"  :min-amout 0.00001   :unit-a "BCC" :min-price 0.01   :unit-b "USDT"  :min-order 10 }
+    :NEOUSDT { :no 5 :pair "NEO/USDT"  :min-amout 0.001     :unit-a "NEO" :min-price 0.001  :unit-b "USDT"  :min-order 10 }
+    :LTCUSDT { :no 6 :pair "LTC/USDT"  :min-amout 0.00001   :unit-a "LTC" :min-price 0.01   :unit-b "USDT"  :min-order 10 }
+  })
+
+
+
+
+
+
